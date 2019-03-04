@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 28
@@ -33,3 +34,19 @@ dependencies {
 }
 
 
+
+
+sceneform.asset('sampledata/lamp/LampPost.obj',
+        'default',
+        'sampledata/lamp/LampPost.sfa',
+        'src/main/assets/LampPost')
+
+sceneform.asset('sampledata/chair/model.obj',
+        'default',
+        'sampledata/chair/model.sfa',
+        'src/main/assets/chair')
+
+sceneform.asset('sampledata/couch/model.obj',
+        'default',
+        'sampledata/couch/model.sfa',
+        'src/main/assets/couch')
